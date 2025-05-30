@@ -33,3 +33,9 @@ inc/
 /MANIFEST.bak
 /pm_to_blib
 /*.zip
+
+# NCBI Dataset
+GCA_021052665.1_ASM2105266v1_genomic.fna
+genomic.gff
+genomic.gbff                
+genomic.gtf

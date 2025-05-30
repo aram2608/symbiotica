@@ -70,4 +70,4 @@ sub _parse_gff {
     return \@features;
 }
 
-1;  # The sacred ending. Without it, Perl will spit on your soul.
+1;  # Has to end in this, Perl will yell at you otherwise

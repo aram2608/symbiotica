@@ -1,0 +1,5 @@
+# label<TAB>Perl regex
+nifH    \bnifH\b
+nodA    \bnodA\b
+fixX    \bfixX\b
+cas     \bcas\d+\b

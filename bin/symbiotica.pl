@@ -23,4 +23,4 @@ die "Usage: $0 --input FILE --format genbank|gff--outdir DIR\n"
 
 my $features = parse($input, $format);
 my $hits = find_patterns($features);
-write_all($hits, $outdir);
+write_all($hits, $outdir, $input, $format);

@@ -39,3 +39,6 @@ GCA_021052665.1_ASM2105266v1_genomic.fna
 genomic.gff
 genomic.gbff                
 genomic.gtf
+
+# Examples that are way too big
+symbiotica_hits.fasta

@@ -5,7 +5,6 @@ package Symbiotica::Finder; # Works like Symbiotica.Finder in Python, the naming
 use strict; # This and the warnings are best practice Perl usage, help you not write bad code
 use warnings;
 use Exporter 'import';
-use Data::Dumper;
 use Symbiotica::Motifs qw(get_motifs);
 our @EXPORT_OK = qw(find_patterns);
 
@@ -13,7 +12,6 @@ our @EXPORT_OK = qw(find_patterns);
 sub find_patterns {
     my ($features) = @_; # The features array come from the Parser.pm and pattern file is our predefined regexes
     my %patterns = get_motifs();
-    warn Dumper(\%patterns);
 
     my @hits; # prepares an empty list to store matched genes
 
@@ -24,7 +22,7 @@ sub find_patterns {
 
             # Try to match against type and tag strings
             # If the feature’s type or its tags match the regex (case-insensitive)
-            if ($feat->{type} =~ $regex || $feat->{tags} =~ $regex) {
+            if ($feat->{type} =~ /$regex/ || $feat->{tags} =~ /$regex/) {
                 push @hits, {           # push adds data to our list
                     %$feat,             # carry original data
                     match => $pat_name, # matched pattern label

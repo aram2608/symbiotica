@@ -36,7 +36,12 @@ sub _parse_genbank {
             my $start = $feat->start;
             my $end   = $feat->end;
             my $strand = $feat->strand;
-            my $tags  = join(",", $feat->get_all_tags);
+            my @pairs;
+                for my $tag ($feat->get_all_tags) {
+                    my @values = eval { $feat->get_tag_values($tag) };
+                    push @pairs, map { "$tag=$_" } @values;
+            }
+            my $tags  = join(",", @pairs);
 
             push @features, {
                 type   => $type,

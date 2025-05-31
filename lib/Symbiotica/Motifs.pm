@@ -10,7 +10,7 @@ our @EXPORT_OK = qw(get_motifs);
 sub get_motifs {
     return (
         'nifH' => qr/\bnifH\b/i,
-        'nodA' => qr/\bnodA\b/i,
+        'nod' => qr/\bnod[A-Z]*\b/i,
         'fixX' => qr/\bfixX\b/i,
         'cas'  => qr/\bcas\d+\b/i,
         'ccm'  => qr/\bccm[A-Z]*\b/i,

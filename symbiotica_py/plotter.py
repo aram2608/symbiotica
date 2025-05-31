@@ -30,7 +30,8 @@ class SymbioticaPlotter:
         return self.summary
 
     
-    def plot_summary(self, outpath):
+    def plot_summary(self, outpath="summary_plot.png"):
+        """Plots the summary of matches genes."""
         if self.summary is None:
             self._summarize()
             self.summary.plot(kind='bar', title='Gene Match Counts')

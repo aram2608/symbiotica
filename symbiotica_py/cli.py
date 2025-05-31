@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
+
 import argparse
 from symbiotica_py.tools import SymbioticaTools
 from symbiotica_py.plotter import SymbioticaPlotter
 
 def main():
-    parser = argparse.ArgumentParser(description="Symbiotica Plotting Tool")
+    parser = argparse.ArgumentParser(description="Symbiotica CLI Tool")
     parser.add_argument('--input', required=True, help="Path to symbiotica_matches.tsv")
     parser.add_argument('--plot', help="Path to save bar plot (PNG)")
     parser.add_argument('--verbose', action='store_true', help="Print summary")

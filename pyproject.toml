@@ -1,0 +1,14 @@
+[project]
+name = "symbiotica"
+version = "0.1.0"
+description = "Genome parser for symbiotic genes."
+readme = "README.md"
+authors = [
+    { name = "Javier Arambula Rascon", email = "ja1473" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

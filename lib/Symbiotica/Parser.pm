@@ -9,6 +9,8 @@ use Bio::Tools::GFF;
 use Exporter 'import';
 our @EXPORT_OK = qw(parse);
 
+# This module takes a genbank or gff and extracts its features for downstream use in the Finder.pm module
+# Main entry point, checks for file and matches file type
 sub parse {
     my ($file, $format) = @_;
     die "File not found: $file\n" unless -e $file;

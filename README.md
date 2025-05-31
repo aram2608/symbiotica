@@ -18,13 +18,13 @@ The tool is written in Perl so use at your own discretion.
 
 ---
 
-Symbiotica can be downloaded by cloning this repo,
+Symbiotica can be downloaded by cloning this repo.
 
 ```
 git clone https://github.com/aram2608/symbiotica.git
 ```
 
-There is also a lightweight installation Bash script that can be run using,
+There is also a lightweight installation Bash script that can be run using.
 
 ```
 ./installer.sh

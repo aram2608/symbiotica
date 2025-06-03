@@ -28,7 +28,6 @@ class SymbioticaPlotter:
             self._load_table()
         self.summary = self.df['match'].value_counts()
         return self.summary
-
     
     def plot_summary(self, outpath="summary_plot.png"):
         """Plots the summary of matches genes."""

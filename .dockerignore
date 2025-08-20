@@ -1,0 +1,9 @@
+.git
+.gitignore
+data/
+*.log
+__pycache__/
+*.pyc
+build/
+dist/
+.DS_Store

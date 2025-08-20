@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME         => 'Symbiotica',
     VERSION      => '0.1',
-    EXE_FILES    => ['bin/symbiotica.pl'],
+    EXE_FILES    => ['symbiotica/bin/symbiotica.pl'],
     PREREQ_PM    => {
         'Getopt::Long'    => 0,
         'Bio::Perl'       => 0,

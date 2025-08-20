@@ -5,8 +5,8 @@ from pathlib import Path
 import typer
 from typing_extensions import Annotated
 
-from symbiotica_py.tools import SymbioticaTools
-from symbiotica_py.plotter import SymbioticaPlotter
+from sympy.lib.tools import SymbioticaTools
+from sympy.lib.plotter import SymbioticaPlotter
 
 app = typer.Typer()
 

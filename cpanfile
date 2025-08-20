@@ -1,0 +1,1 @@
+requires 'BioPerl', '>= 1.7.8';

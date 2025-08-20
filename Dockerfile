@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libffi-dev \
     libssl-dev \
+    libdb5.3 libdb5.3-dev \
     # python3 \
     # python3-pip \
 && rm -rf /var/lib/apt/lists/*
@@ -37,6 +38,9 @@ RUN cpanm --installdeps .
 # Make sure the main script is executable
 RUN chmod +x /app/symbiotica/bin/symbiotica.pl \
 && ln -sf /app/symbiotica/bin/symbiotica.pl /usr/local/bin/symbiotica
+
+# Local module
+ENV PERL5LIB=/app/symbiotica/lib
 
 # Default working dir
 WORKDIR /app

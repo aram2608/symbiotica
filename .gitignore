@@ -46,3 +46,4 @@ symbiotica_hits.fasta
 # Python stuff
 .venv
 .python-version
+.example

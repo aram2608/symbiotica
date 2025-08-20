@@ -55,8 +55,8 @@ CP088115	Symbiotica	CDS	554030	555460	.	+	.	ID=nod_554030;Note=Matched:nod
 CP088115	Symbiotica	CDS	555467	557128	.	+	.	ID=nod_555467;Note=Matched:nod
 CP088115	Symbiotica	gene	582525	583418	.	+	.	ID=nifH_582525;Note=Matched:nifH
 CP088115	Symbiotica	CDS	582525	583418	.	+	.	ID=nifH_582525;Note=Matched:nifH
-CP088115	Symbiotica	CDS	595313	596293	.	+	.	ID=nod_595313;Note=Matched:nod
 CP088115	Symbiotica	CDS	595313	596293	.	+	.	ID=exo_595313;Note=Matched:exo
+CP088115	Symbiotica	CDS	595313	596293	.	+	.	ID=nod_595313;Note=Matched:nod
 CP088115	Symbiotica	gene	597088	597831	.	-	.	ID=nod_597088;Note=Matched:nod
 CP088115	Symbiotica	CDS	597088	597831	.	-	.	ID=nod_597088;Note=Matched:nod
 CP088115	Symbiotica	gene	601351	601632	.	+	.	ID=nod_601351;Note=Matched:nod

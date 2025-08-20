@@ -37,6 +37,12 @@ make
 make install
 ```
 
+Or finally, you can run the following.
+
+```
+docker build -t symbiotica:latest . -f DockerFile
+```
+
 ---
 
 # Example Usage
@@ -46,4 +52,17 @@ perl symbiotica/bin/symbiotica.pl \
 --input data/genomic.gbff \
 --format genbank \
 --outdir examples
+```
+
+If using Docker usage changes slightly
+
+```
+# You need to mount the local directories to save outputs
+docker run --rm -it \
+  -v "$PWD/data:/app/data" \
+  -v "$PWD/examples:/app/examples" \
+  symbiotica:latest \
+  --input data/genomic.gbff \
+  --format genbank \
+  --outdir examples
 ```

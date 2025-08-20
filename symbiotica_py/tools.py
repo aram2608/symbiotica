@@ -3,6 +3,7 @@
 import pandas as pd
 import sys
 
+
 class SymbioticaTools:
     """Tool chain for symbiotica_py."""
 
@@ -14,7 +15,7 @@ class SymbioticaTools:
     def _load_table(self):
         """Load tsv file to parse for plotting."""
         try:
-            df = pd.read_csv(self.path, sep='\t')
+            df = pd.read_csv(self.path, sep="\t")
             self.df = df
         except Exception as e:
             sys.exit(f"Failed to load TSV: {e}")

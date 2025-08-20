@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sys
 
+
 class SymbioticaPlotter:
     """A class for plotting abundance of genes found from symbiotica."""
 
@@ -17,7 +18,7 @@ class SymbioticaPlotter:
     def _load_table(self):
         """Load tsv file to parse for plotting."""
         try:
-            df = pd.read_csv(self.path, sep='\t')
+            df = pd.read_csv(self.path, sep="\t")
             self.df = df
         except Exception as e:
             sys.exit(f"Failed to load TSV: {e}")
@@ -26,14 +27,14 @@ class SymbioticaPlotter:
         """Summarizes symbiotica tsv outputs."""
         if self.df is None:
             self._load_table()
-        self.summary = self.df['match'].value_counts()
+        self.summary = self.df["match"].value_counts()
         return self.summary
-    
-    def plot_summary(self, outpath="summary_plot.png"):
+
+    def plot_summary(self, outpath):
         """Plots the summary of matches genes."""
         if self.summary is None:
             self._summarize()
-            self.summary.plot(kind='bar', title='Gene Match Counts')
+            self.summary.plot(kind="bar", title="Gene Match Counts")
             plt.xlabel("Gene")
             plt.ylabel("Count")
             plt.tight_layout()

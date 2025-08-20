@@ -19,19 +19,19 @@ This is more of a learning project than a real tool so any advice is welcome!
 
 Symbiotica can be downloaded by cloning this repo.
 
-```
+``` Bash
 git clone https://github.com/aram2608/symbiotica.git
 ```
 
 There is also a lightweight installation Bash script that can be run using.
 
-```
+``` Bash
 ./installer.sh
 ```
 
 Or, run the following,
 
-```
+``` Bash
 perl Makefile.PL
 make
 make install
@@ -39,7 +39,7 @@ make install
 
 Or finally, you can run the following.
 
-```
+``` Bash
 docker build -t symbiotica:latest . -f DockerFile
 ```
 
@@ -47,7 +47,7 @@ docker build -t symbiotica:latest . -f DockerFile
 
 # Example Usage
 
-```
+``` Bash
 perl symbiotica/bin/symbiotica.pl \      
 --input data/genomic.gbff \
 --format genbank \
@@ -56,7 +56,7 @@ perl symbiotica/bin/symbiotica.pl \
 
 If using Docker usage changes slightly
 
-```
+``` Bash
 # You need to mount the local directories to save outputs
 docker run --rm -it \
   -v "$PWD/data:/app/data" \

@@ -29,7 +29,7 @@ ENV PERL_CPANM_OPT="--notest --quiet --skip-satisfied"
 # Working directory for the app
 WORKDIR /app
 
-# --- App code ---
+# Copy repo into image, needed to find the cpanfile for dep installation
 COPY . .
 
 # Install Perl deps
